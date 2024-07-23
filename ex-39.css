@@ -1,0 +1,47 @@
+div {
+    background-color: #deede0;
+    width: 40%;
+    padding: 2%;
+    margin-left: 28%;
+    margin-top: 30vh;
+    border: 1px solid darkgrey;
+    border-radius: 5px;
+}
+
+button {
+    background-color: crimson;
+    padding: 4px;
+    border: 1px solid crimson;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+button:hover {
+    box-shadow: 0px 0px 2px 2px rgb(219, 23, 63);
+}
+
+input {
+    background-color: #f7fff0;
+    border: 1px solid #f7fff0;
+}
+
+input:hover {
+    box-shadow: 0px 0px 2px 2px rgb(204, 202, 202);
+}
+
+input:focus {
+    outline: 1px solid rgb(161, 160, 160);
+}
+
+#text {
+    width: 79%;
+}
+
+#word {
+    width: 41%;
+}
+
+p {
+    margin: 15px;
+}
+

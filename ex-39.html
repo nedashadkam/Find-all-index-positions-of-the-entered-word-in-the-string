@@ -1,0 +1,62 @@
+<!-- یک برنامه جاوا اسکریپت بنویسید تا تمام موقعیت های شاخص یک کلمه معین را در یک رشته مشخص پیدا کند. -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="ex-39.css">
+
+</head>
+
+<body>
+
+    <div>
+
+        <p>
+            <label for="text">Enter a string : </label>
+
+            <input type="text" id="text">
+        </p>
+
+        <p>
+            <label for="text">Enter one of the words in the entered string :</label>
+
+            <input type="text" id="word">
+        </p>
+
+        <button onclick="result()">Find all index positions of the entered word in the string</button>
+
+        <p id="demo"></p>
+
+    </div>
+
+
+    <script>
+
+        function result() {
+
+            let text = document.getElementById("text").value;
+
+            let word = document.getElementById("word").value;
+
+           let arr = text.split(" ");
+           let index =[]
+           
+           for (let i = 0; i < arr.length; i++) {
+
+                if(arr[i]==word) {
+                    index.push(i)
+                }
+            }
+
+            document.getElementById('demo').innerHTML = "The selected word is located in index positions : " + index.join(',');
+
+        }
+
+    </script>
+
+</body>
+
+</html>
